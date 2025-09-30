@@ -15,6 +15,14 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                headline: ['Fredoka One', 'cursive'],
+                mono: ['Roboto Mono', 'monospace'],
+            },
+            colors: {
+                'jeopardy-blue': '#1E3A8A',
+                'jeopardy-yellow': '#FACC15',
+                'jeopardy-red': '#EF4444',
+                'jeopardy-green': '#22C55E',
             },
         },
     },

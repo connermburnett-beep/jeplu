@@ -12,8 +12,11 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                    <x-nav-link href="{{ route('games.index') }}" :active="request()->routeIs('games.*')">
+                        {{ __('My Games') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('subscription.index') }}" :active="request()->routeIs('subscription.*')">
+                        {{ __('Subscription') }}
                     </x-nav-link>
                 </div>
             </div>
