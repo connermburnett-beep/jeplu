@@ -1,0 +1,1 @@
+@livewire('presentation-view', ['session' => $session])
