@@ -59,16 +59,13 @@
                 </form>
             </div>
 
-            <!-- Game Board Preview -->
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6 mb-6">
-                <h3 class="text-lg font-semibold mb-4">Game Board</h3>
-                @livewire('game-board', ['game' => $game])
-            </div>
-
-            <!-- Categories and Questions Management -->
+            <!-- Interactive Game Board -->
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
-                <h3 class="text-lg font-semibold mb-4">Categories & Questions</h3>
-                @livewire('category-manager', ['game' => $game])
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Interactive Game Board</h3>
+                    <p class="text-sm text-gray-600">Click on the board to add and edit categories and questions directly!</p>
+                </div>
+                @livewire('interactive-game-board', ['game' => $game])
             </div>
         </div>
     </div>
