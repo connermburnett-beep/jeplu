@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('session_code')->unique(); // Unique code for students to join
             $table->enum('status', ['waiting', 'active', 'paused', 'completed'])->default('waiting');
             $table->foreignId('current_question_id')->nullable()->constrained('questions')->onDelete('set null');
-            $table->foreignId('buzzed_team_id')->nullable()->constrained('teams')->onDelete('set null');
             $table->timestamp('question_started_at')->nullable();
             $table->timestamp('started_at')->nullable();
             $table->timestamp('completed_at')->nullable();
